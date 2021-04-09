@@ -42,6 +42,7 @@ blockquote, q {
     border:1px solid grey;
 } 
 
+/*Header Styles*/
 header{
     background-color: lightgray;
     /* display:flex; */
@@ -55,23 +56,25 @@ header nav{
 }
 header nav a{
     width: 8%;
-    padding:10px;;
+    padding:10px;
     text-align: center;
     text-decoration: none;
     border:1px solid black;
 }
 
+/*About Me Styles*/
 .aboutMe {
     display: flex;
 }
 
 .aboutMe div{
+    margin-top:1%;
     width: 50%;
     text-align: center;
 }
 .aboutMe img{
     width: 45%;
-    align-self: flex-start;
+    /* align-self: flex-start; */
 }
 
 .aboutMe .right{
@@ -88,3 +91,32 @@ header nav a{
     padding: 1%;
 }
 
+/*Section Styles*/
+.images{
+    display:flex;
+    justify-content: space-around;
+}
+.images img{
+    margin-top:1%;
+    width: 15%;
+}
+.text{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom:1%;
+    flex-wrap:wrap;
+}
+
+/*Footer Styles*/
+footer{
+    background-color: lightgray;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding:5%;
+}
+footer button{
+    border:1px solid black;
+    width: 10%;
+    padding:10px 0;
+}
