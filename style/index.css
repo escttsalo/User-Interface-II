@@ -54,9 +54,37 @@ header nav{
     padding:1%;
 }
 header nav a{
-    width: 5%;
-    height: 2%;
+    width: 8%;
+    padding:10px;;
     text-align: center;
     text-decoration: none;
+    border:1px solid black;
+}
+
+.aboutMe {
+    display: flex;
+}
+
+.aboutMe div{
+    width: 50%;
+    text-align: center;
+}
+.aboutMe img{
+    width: 45%;
+    align-self: flex-start;
+}
+
+.aboutMe .right{
+    padding: 1%;
+    text-align: start;
+}
+
+.right h2, h3{
+    padding: 2%;
+}
+
+.right button{
+    width: 15%;
+    padding: 1%;
 }
 
