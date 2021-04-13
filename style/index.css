@@ -39,7 +39,7 @@ blockquote, q {
 *{
     box-sizing:border-box;
     max-width:100%;
-    border:1px solid black;
+    /* border:1px solid black; */
     font-family: 'Source Code Pro', sans-serif;
 } 
 html{
@@ -137,6 +137,26 @@ footer button{
 }
 
 /*Responsive Styles*/
+/*Tablet Styles*/
+@media(max-width:800px){
+    header nav a{
+        width: 12%;
+    }
+
+    .images div{
+        width: 23%;
+    }
+
+    .aboutMe button{
+        width: 35%;
+        height: 5vh;
+    }
+
+    footer button{
+        width: 15%;
+        height: 5vh;
+    }
+}
 
 /*Phone*/
 @media(max-width:500px){
@@ -208,22 +228,5 @@ footer button{
     }
     .socials{
         width: 10%;
-    }
-}
-
-/*Tablet Styles*/
-@media(max-width:800px){
-    header nav a{
-        width: 12%;
-    }
-
-    .aboutMe button{
-        width: 35%;
-        height: 5vh;
-    }
-
-    footer button{
-        width: 15%;
-        height: 5vh;
     }
 }
