@@ -171,6 +171,7 @@ footer button{
     .aboutMe .left{
         width: 100%;
         position: relative;
+        margin:3% 0;
     }
     .aboutMe .left img{
         width: 100%;
@@ -189,7 +190,13 @@ footer button{
     }
 
     /*Middle Section Styles*/
-    
+    .images div{
+        width: 45%;
+    }
+
+    .fourth, .eighth{
+        display: none;
+    }
     
     /*Footer Styles*/
     footer h2{
@@ -201,5 +208,22 @@ footer button{
     }
     .socials{
         width: 10%;
+    }
+}
+
+/*Tablet Styles*/
+@media(max-width:800px){
+    header nav a{
+        width: 12%;
+    }
+
+    .aboutMe button{
+        width: 35%;
+        height: 5vh;
+    }
+
+    footer button{
+        width: 15%;
+        height: 5vh;
     }
 }
