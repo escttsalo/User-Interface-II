@@ -1,1 +1,232 @@
 /* Add CSS styling here */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	/* vertical-align: baseline; */
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	/* font-size: 100%; */
+	outline: 0;
+	/* padding: 0;
+	margin: 0; */
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+*{
+    box-sizing:border-box;
+    max-width:100%;
+    /* border:1px solid black; */
+    font-family: 'Source Code Pro', sans-serif;
+} 
+html{
+    font-size:62.5%;
+    /* 1rem =16 */
+}
+body{
+    font-size:1.4rem;
+}
+
+/*Header Styles*/
+header{
+    background-color: lightgray;
+    /* display:flex; */
+}
+header div h1{
+    font-size: 2rem;
+}
+header nav{
+    display: flex;
+    padding:1%;
+}
+header nav a{
+    width: 8%;
+    padding:1%;
+    text-align: center;
+    text-decoration: none;
+    border:1px solid black;
+}
+
+/*About Me Styles*/
+.aboutMe {
+    display: flex;
+}
+
+.aboutMe div{
+    margin-top:1%;
+    width: 50%;
+    text-align: center;
+}
+.aboutMe img{
+    width: 45%;
+    /* align-self: flex-start; */
+}
+
+.aboutMe .right{
+    padding: 1%;
+    text-align: start;
+}
+
+.right h2, h3{
+    padding: 2%;
+}
+
+.right button{
+    width: 15%;
+    padding: 1%;
+}
+
+/*Section Styles*/
+.images{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+.images div{
+    margin-top:1%;
+    width: 25%;
+}
+.text{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom:1%;
+    flex-wrap:wrap;
+}
+
+/*Footer Styles*/
+footer{
+    background-color: lightgray;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding:5%;
+}
+.socials{
+    width: 3%;
+    height: 3%;
+}
+footer button{
+    border:1px solid black;
+    width: 10%;
+    padding:1% 0;
+}
+
+/*Responsive Styles*/
+/*Tablet Styles*/
+@media(max-width:800px){
+    header nav a{
+        width: 12%;
+    }
+
+    .images div{
+        width: 23%;
+    }
+
+    .aboutMe button{
+        width: 35%;
+        height: 5vh;
+    }
+
+    footer button{
+        width: 15%;
+        height: 5vh;
+    }
+}
+
+/*Phone*/
+@media(max-width:500px){
+    /*Header Styles*/
+    header{
+        background-color: white;
+    }
+    header nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    header div h1{
+        font-size: 2.5rem;
+        text-align: center;
+        width: 100%;    
+    }
+    header nav a{
+        width:20%;
+    } 
+    header nav a:first-child{
+        background-color: black;
+        color:#fff;
+    } 
+    
+    /*About Me Styles*/
+    .aboutMe{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutMe .left{
+        width: 100%;
+        position: relative;
+        margin:3% 0;
+    }
+    .aboutMe .left img{
+        width: 100%;
+        height: 30vh;
+    }
+    .aboutMe .right{
+        text-align: center;
+        position:absolute;
+    }
+    .right h3{
+        display: none;
+    }
+    .right button{
+        width: 60%;
+        height: 5vh;
+    }
+
+    /*Middle Section Styles*/
+    .images div{
+        width: 45%;
+    }
+
+    .fourth, .eighth{
+        display: none;
+    }
+    
+    /*Footer Styles*/
+    footer h2{
+        display: none;
+    }
+    footer button{
+        width: 25%;
+        height: 5vh;
+    }
+    .socials{
+        width: 10%;
+    }
+}
